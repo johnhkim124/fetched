@@ -4,7 +4,7 @@
 
 
 ## Project Description
-A React and Airtable app that allows users to browse dogs up for adoption as well as put up dogs for adoption. At the home page you can navigate to browse dogs, put up dogs to find a good loving home.
+A React and Airtable app that allows users to browse dogs up for adoption as well as put up dogs for adoption. At the home page you can navigate to browse dogs to see a listing of dogs for adoption. There is also a form to put up dogs to find a good loving home for them.
 
 
 ## Wireframes
@@ -53,7 +53,7 @@ https://app.diagrams.net/?src=about#Lcomponent%20hierarchy
 #### PostMVP 
 -Allow users to submit adoption form
 -Filter feature breed,gender,age, etc.
--
+-Advanced Styling
 
 
 ## Project Schedule 
