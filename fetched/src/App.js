@@ -24,7 +24,7 @@ function App() {
     getDogData();
   }, [])
 
-  console.log(dogData)
+  // console.log(dogData)
 
 
 
@@ -44,8 +44,8 @@ function App() {
         })}
       </Route>
 
-      <Route path="/dog/:id">
-        <DogInfo/>
+      <Route path="/fetched/:id">
+        <DogInfo dogData={dogData}/>
       </Route>
 
       <Route path="/newDogForm">

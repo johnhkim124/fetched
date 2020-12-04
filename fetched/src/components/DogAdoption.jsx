@@ -6,11 +6,11 @@ import { baseURL, config } from "../services";
 const DogAdoption = (props) => {
   return (
     <div>
-      <Link to={`/doggy/${props.dog.id}`}>
+      <Link to={`/fetched/${props.dog.id}`}>
         <img src={props.dog.fields.dogPortrait}></img>
       </Link>
 
-      <Link to={`/doggy/${props.dog.id}`}>
+      <Link to={`/fetched/${props.dog.id}`}>
         <h3>{props.dog.fields.dogName}</h3>
       </Link>
 
