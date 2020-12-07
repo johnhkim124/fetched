@@ -32,6 +32,8 @@ const DogInfo = () => {
           <h4>{singleDog.fields.gender}</h4>
           <h4>{singleDog.fields.location}</h4>
           <p className="description">{singleDog.fields.description}</p>
+          <p>Contact: {singleDog.fields.email}</p>
+          <button>Edit</button>
           <button>Delete</button>
         </div>
       )}

@@ -1,0 +1,9 @@
+.nav {
+  background-color: blue;
+  display: flex;
+}
+
+.nav a {
+  margin: 5px;
+  color: white;
+}

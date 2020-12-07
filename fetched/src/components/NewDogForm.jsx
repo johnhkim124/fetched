@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
+import "./NewDogForm.css";
 
 const NewDogForm = (props) => {
   const [dogName, setDogName] = useState("");
@@ -48,78 +49,86 @@ const NewDogForm = (props) => {
   };
 
   return (
-    <div>
+    <div className="form">
+      <h1>Find a Loving Home</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">Name: </label>
         <input
           type="text"
           name="name"
           value={dogName}
+          placeholder="Name"
           required
           onChange={(e) => {
             setDogName(e.target.value);
           }}
         />
-        <label htmlFor="age">Age:</label>
+        <label htmlFor="age">Age: </label>
         <input
           type="text"
           name="age"
           value={age}
+          placeholder="Age"
           required
           onChange={(e) => {
             setAge(e.target.value);
           }}
         />
-        <label htmlFor="gender">Gender:</label>
+        <label htmlFor="gender">Gender: </label>
         <input
           type="text"
           name="gender"
           value={gender}
+          placeholder="Gender"
           required
           onChange={(e) => {
             setGender(e.target.value);
           }}
         />
-        <label htmlFor="breed">Breed:</label>
+        <label htmlFor="breed">Breed: </label>
         <input
           type="text"
           name="breed"
           value={breed}
+          placeholder="Breed"
           required
           onChange={(e) => {
             setBreed(e.target.value);
           }}
         />
-        <label htmlFor="location">Location:</label>
+        <label htmlFor="location">Location: </label>
         <input
           type="text"
           name="location"
           value={location}
+          placeholder="Location"
           required
           onChange={(e) => {
             setLocation(e.target.value);
           }}
         />
-        <label htmlFor="dogImg">Dog Image URL:</label>
+        <label htmlFor="dogImg">Dog Photo: </label>
         <input
           type="url"
           name="dogImg"
           value={dogPortrait}
+          placeholder="URL"
           required
           onChange={(e) => {
             setDogPortrait(e.target.value);
           }}
         />
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">Email: </label>
         <input
           type="email"
           name="email"
           value={email}
+          placeholder="Email"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
         />
-        <label htmlFor="description">Description:</label>
+        <label htmlFor="description">Description: </label>
         <input
           type="text"
           name="description"

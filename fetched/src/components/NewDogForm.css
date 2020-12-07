@@ -1,0 +1,16 @@
+form {
+  display: grid;
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
+  border: solid black 2px;
+  grid-gap: 10px;
+}
+
+label {
+  text-align: start;
+}
+
+input {
+  width: 30%;
+}
