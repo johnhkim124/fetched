@@ -14,6 +14,7 @@ import DogInfo from "./components/DogInfo";
 function App() {
 
   const [dogData, setDogData] = useState([]);
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const getDogData = async () => {
@@ -22,14 +23,9 @@ function App() {
 
     }
     getDogData();
-  }, [])
+  }, [toggle]);
 
   // console.log(dogData)
-
-
-
-
-
 
   return (
     <div className="App">
@@ -49,7 +45,7 @@ function App() {
       </Route>
 
       <Route path="/newDogForm">
-        <NewDogForm/>
+        <NewDogForm dogData={dogData} setToggle={setToggle}/>
       </Route>
 
       <Footer />
