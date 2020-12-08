@@ -1,8 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./DogAdoption.css";
+import { baseURL, config } from "../services";
+import axios from "axios";
 
 const DogAdoption = (props) => {
+  const handleDelete = async () => {
+    const dogURL = `${baseURL}/${props.dog.id}`;
+    await axios.delete(dogURL, config);
+    props.setToggle((previous) => !previous);
+  };
+
   return (
     <div className="doggyListing">
       <Link to={`/fetched/${props.dog.id}`}>
@@ -19,6 +27,7 @@ const DogAdoption = (props) => {
 
       <p>Age: {props.dog.fields.age}</p>
       <p>{props.dog.fields.breed}</p>
+      <button onClick={handleDelete}>Delete</button>
     </div>
   );
 };

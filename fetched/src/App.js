@@ -35,9 +35,9 @@ function App() {
       </Route>
 
       <Route path="/dogListing">
-        {dogData.map((dog) => {
-          return <DogAdoption dog={dog} key={dog.id} setToggle={setToggle}/>
-        })}
+        {dogData.map((dog) => (
+         <DogAdoption dog={dog} key={dog.id} setToggle={setToggle}/>
+        ))}
       </Route>
 
       <Route path="/fetched/:id">
