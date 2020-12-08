@@ -4,6 +4,7 @@ import "./Nav.css";
 function Nav() {
   return (
     <div className="nav">
+      <div>Fetched</div>
       <div className="linksDiv">
         <Link to="/">Home</Link>
         <Link to="/dogListing">Adopt</Link>

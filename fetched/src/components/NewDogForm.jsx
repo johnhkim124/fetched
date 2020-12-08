@@ -47,12 +47,13 @@ const NewDogForm = (props) => {
     if (params.id) {
       const dogIdURL = `${baseURL}/${params.id}`;
       await axios.put(dogIdURL, { fields }, config);
+      history.push(`/fetched/${params.id}`);
     } else {
       await axios.post(baseURL, { records: [{ fields }] }, config);
+      history.push("/dogListing");
     }
 
     props.setToggle((prev) => !prev);
-    history.push("/dogListing");
   };
 
   return (
