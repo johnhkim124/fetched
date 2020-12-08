@@ -1,0 +1,15 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  background-position: 5px 0px;
+}
+
+.homeDiv {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  background-color: rgb(245, 91, 91);
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}

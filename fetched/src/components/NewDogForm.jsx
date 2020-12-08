@@ -30,6 +30,7 @@ const NewDogForm = (props) => {
       setEmail(dog.fields.email);
     }
   }, [props.dogData, params.id]);
+  console.log(params);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -44,8 +45,15 @@ const NewDogForm = (props) => {
       email,
     };
 
-    await axios.post(baseURL, { records: [{ fields }] }, config);
+    if (params.id) {
+      const dogIdURL = `${baseURL}/edit/${params.id}`;
+      await axios.put(dogIdURL, { records: [{ fields }] }, config);
+    } else {
+      await axios.post(baseURL, { records: [{ fields }] }, config);
+    }
+
     props.setToggle((prev) => !prev);
+    history.push("/dogListing");
   };
 
   return (
@@ -129,10 +137,12 @@ const NewDogForm = (props) => {
           }}
         />
         <label htmlFor="description">Description: </label>
-        <input
+        <textarea
           type="text"
           name="description"
           value={description}
+          cols="20"
+          rows="6"
           onChange={(e) => {
             setDescription(e.target.value);
           }}

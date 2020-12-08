@@ -4,8 +4,9 @@ import axios from "axios";
 import { baseURL, config } from "../services";
 import { useState, useEffect } from "react";
 import "./DogInfo.css";
+import { Link } from "react-router-dom";
 
-const DogInfo = () => {
+const DogInfo = (props) => {
   const { id } = useParams();
   const [singleDog, setSingleDog] = useState({});
 
@@ -33,8 +34,9 @@ const DogInfo = () => {
           <h4>{singleDog.fields.location}</h4>
           <p className="description">{singleDog.fields.description}</p>
           <p>Contact: {singleDog.fields.email}</p>
-          <button>Edit</button>
-          <button>Delete</button>
+          <Link to={`/edit/${singleDog.id}`}>
+            <button>Edit</button>
+          </Link>
         </div>
       )}
     </div>
