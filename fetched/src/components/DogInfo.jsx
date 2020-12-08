@@ -33,7 +33,9 @@ const DogInfo = (props) => {
           <h4>{singleDog.fields.gender}</h4>
           <h4>{singleDog.fields.location}</h4>
           <p className="description">{singleDog.fields.description}</p>
-          <p>Contact: {singleDog.fields.email}</p>
+          <p>
+            <b>Contact:</b> {singleDog.fields.email}
+          </p>
           <Link>
             <button>Previous</button>
           </Link>
