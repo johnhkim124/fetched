@@ -30,7 +30,6 @@ const NewDogForm = (props) => {
       setEmail(dog.fields.email);
     }
   }, [props.dogData, params.id]);
-  console.log(params);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,8 +45,8 @@ const NewDogForm = (props) => {
     };
 
     if (params.id) {
-      const dogIdURL = `${baseURL}/edit/${params.id}`;
-      await axios.put(dogIdURL, { records: [{ fields }] }, config);
+      const dogIdURL = `${baseURL}/${params.id}`;
+      await axios.put(dogIdURL, { fields }, config);
     } else {
       await axios.post(baseURL, { records: [{ fields }] }, config);
     }
