@@ -7,14 +7,7 @@ function Nav() {
   let navMenu;
 
   if (openNav) {
-    navMenu = <div>The menu</div>;
-  }
-
-  return (
-    <div className="nav">
-      <Link className="fetchedNav" to="/">
-        Fetched
-      </Link>
+    navMenu = (
       <div className="linksDiv">
         <Link to="/">Home</Link>
         <Link to="/dogListing">Adopt</Link>
@@ -24,6 +17,15 @@ function Nav() {
           <Link>Log In</Link>
         </div>
       </div>
+    );
+  }
+
+  return (
+    <div className="nav">
+      <Link className="fetchedNav" to="/">
+        Fetched
+      </Link>
+
       <span onClick={() => setOpenNav(!openNav)}>Click for menu</span>
       {navMenu}
     </div>
