@@ -53,8 +53,8 @@ function App() {
       </Route>
 
       <Footer />
-      <Route exact path="/:404">
-        <h1>Page 404</h1>
+      <Route path="/:404">
+          <h1>404 Page</h1>
           <Link to="/">Go back home</Link>
       </Route>
     </div>
