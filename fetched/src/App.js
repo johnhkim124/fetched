@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
-import { Route } from "react-router-dom";
+import { Route, Link} from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { baseURL, config } from "./services";
@@ -53,6 +53,10 @@ function App() {
       </Route>
 
       <Footer />
+      <Route path="/:404">
+        <h1>Page 404</h1>
+        <Link to="/">Home</Link>
+      </Route>
     </div>
   );
 }
