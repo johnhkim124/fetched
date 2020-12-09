@@ -3,7 +3,11 @@ import "./Nav.css";
 import { useState } from "react";
 
 function Nav() {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  let navMenu;
+
+  if (openNav) {
+  }
 
   return (
     <div className="nav">
@@ -19,7 +23,7 @@ function Nav() {
           <Link>Log In</Link>
         </div>
       </div>
-      <span onClick={() => setOpenMenu}>Click for menu</span>
+      <span onClick={() => setOpenNav(!openNav)}>Click for menu</span>
     </div>
   );
 }

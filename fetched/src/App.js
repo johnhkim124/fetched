@@ -30,8 +30,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Route>
-        <Home exact path="/"/>
+      <Route exact path="/">
+        <Home />
       </Route>
 
       <Route path="/dogListing">
