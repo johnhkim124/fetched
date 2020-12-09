@@ -7,9 +7,17 @@
 }
 
 .nav a {
-  margin: 5px;
+  margin: 0px;
   color: black;
   display: block;
+  text-decoration: none;
+  background-color: rgb(245, 91, 91);
+  border-bottom: solid black 1px;
+  padding: 10px;
+}
+
+.nav a:hover {
+  background-color: rgb(255, 255, 255);
 }
 
 .fetchedNav {
