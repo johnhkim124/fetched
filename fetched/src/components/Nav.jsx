@@ -7,6 +7,7 @@ function Nav() {
   let navMenu;
 
   if (openNav) {
+    navMenu = <div>The menu</div>;
   }
 
   return (
@@ -24,6 +25,7 @@ function Nav() {
         </div>
       </div>
       <span onClick={() => setOpenNav(!openNav)}>Click for menu</span>
+      {navMenu}
     </div>
   );
 }

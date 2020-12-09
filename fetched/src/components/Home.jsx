@@ -14,7 +14,7 @@ const Home = () => {
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
         <Link to="/dogListing">
-          <button>Adopt</button>
+          <button>Adopt Today</button>
         </Link>
       </div>
     </div>
