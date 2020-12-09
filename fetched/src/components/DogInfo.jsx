@@ -36,15 +36,9 @@ const DogInfo = (props) => {
           <p>
             <b>Contact:</b> {singleDog.fields.email}
           </p>
-          <Link>
-            <button>Previous</button>
-          </Link>
+
           <Link to={`/edit/${singleDog.id}`}>
             <button>Edit</button>
-          </Link>
-
-          <Link>
-            <button>Next</button>
           </Link>
         </div>
       )}

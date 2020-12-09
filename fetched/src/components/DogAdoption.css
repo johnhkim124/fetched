@@ -14,3 +14,9 @@
   border-radius: 10px;
   background-color: white;
 }
+
+.doggyListing button {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+}
