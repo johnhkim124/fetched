@@ -18,6 +18,7 @@ const NewDogForm = (props) => {
   const history = useHistory();
 
   useEffect(() => {
+    console.log(props.dogData);
     if (params.id > 0 && props.dogData.length) {
       const dog = props.dogData.find((dog) => dog.id === params.id);
       setDogName(dog.fields.dogName);
