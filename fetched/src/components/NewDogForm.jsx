@@ -19,8 +19,9 @@ const NewDogForm = (props) => {
 
   useEffect(() => {
     console.log(props.dogData);
-    if (params.id > 0 && props.dogData.length) {
+    if (params.id && props.dogData.length) {
       const dog = props.dogData.find((dog) => dog.id === params.id);
+      console.log(dog);
       setDogName(dog.fields.dogName);
       setGender(dog.fields.gender);
       setAge(dog.fields.age);
