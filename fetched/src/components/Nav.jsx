@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 import { useState } from "react";
 
+//Reference for hamburger nav
+//https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
+
 function Nav() {
   const [openNav, setOpenNav] = useState(false);
   let navMenu;
@@ -13,8 +16,9 @@ function Nav() {
         <Link to="/dogListing">Adopt</Link>
         <Link to="/newDogForm">Find a Home</Link>
 
-        <Link>Sign Up</Link>
-        <Link>Log In</Link>
+        <Link className="sign">Sign Up</Link>
+
+        <Link className="sign">Log In</Link>
       </div>
     );
   }
@@ -53,6 +57,7 @@ function Nav() {
         <span className="hamburgerNav" onClick={() => setOpenNav(!openNav)}>
           Menu
         </span>
+
         {navMenu}
       </header>
     </div>
