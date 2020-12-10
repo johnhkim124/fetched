@@ -76,16 +76,16 @@ https://app.diagrams.net/?src=about#Lcomponent%20hierarchy
 
 | Component            | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Approvals    |    H     |      1hrs      |               |    2hrs      |  2hrs
+| Project Approvals    |    H     |      1hrs      |         2hrs      |         |  2hrs
 | Airtable             |    H     |      2hrs      |               |   2hrs          | 2hrs
-| Components/Structure |    H     |      3hrs      |               |             |
-| Rendering Data       |    H     |      3hrs      |               |             |
-| Rendering Form       |    H     |      3hrs      |               |             |
-| Rendering page data  |    H     |      3hrs      |               |             |
-| CSS                  |    M     |      6hrs      |               |             |
-| Advanced CSS         |    L     |      6hrs      |               |             |
-| Post/MVP             |    L     |      8hrs      |               |             |
-| Total                |    H     |     35hrs      |               |             |
+| Components/Structure |    H     |      3hrs      |               |             | 3hrs
+| Rendering Data       |    H     |      3hrs      |               |             | 3hrs
+| Rendering Form       |    H     |      3hrs      |               |             | 3hrs
+| Rendering page data  |    H     |      3hrs      |               |             | 3hrs
+| CSS                  |    M     |      6hrs      |               |             | 5hrs
+| Advanced CSS         |    L     |      6hrs      |               |             | 6hrs
+| Post/MVP             |    L     |      8hrs      |               |             | 8hrs
+| Total                |    H     |     35hrs      |               |      35hrs       | 35hrs
 
 ## SWOT Analysis
 
