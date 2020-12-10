@@ -76,7 +76,7 @@ https://app.diagrams.net/?src=about#Lcomponent%20hierarchy
 
 | Component            | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Approvals    |    H     |      1hrs      |         2hrs      |         |  2hrs
+| Project Approvals    |    H     |      1hrs      |         2hrs      |         |  2hrs | 1hrs
 | Airtable             |    H     |      2hrs      |          2hrs     |             | 2hrs
 | Components/Structure |    H     |      3hrs      |             3hrs  |             | 3hrs
 | Rendering Data       |    H     |      3hrs      |             3hrs  |             | 3hrs
