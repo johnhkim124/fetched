@@ -65,19 +65,19 @@ https://app.diagrams.net/?src=about#Lcomponent%20hierarchy
 
 | Day    | Deliverable                   | Status     |
 | ------ | ----------------------------- | ---------- |
-| Dec 4  | Project Approvals             | Incomplete |
-| Dec 7  | Components/structure/GET data | Incomplete |
-| Dec 8  | POST data/more functionality  | Incomplete |
-| Dec 9  | CSS app/components MVP        | Incomplete |
-| Dec 10 | Advanced CSS/ Post MVP        | Incomplete |
-| Dec 11 | Presentations                 | Incomplete |
+| Dec 4  | Project Approvals             | Complete |
+| Dec 7  | Components/structure/GET data | Complete |
+| Dec 8  | POST data/more functionality  | Complete |
+| Dec 9  | CSS app/components MVP        | Complete |
+| Dec 10 | Advanced CSS/ Post MVP        | Complete |
+| Dec 11 | Presentations                 | Complete |
 
 ## Timeframes
 
 | Component            | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Approvals    |    H     |      1hrs      |               |             |
-| Airtable             |    H     |      2hrs      |               |             |
+| Project Approvals    |    H     |      1hrs      |               |    2hrs      |  2hrs
+| Airtable             |    H     |      2hrs      |               |   2hrs          | 2hrs
 | Components/Structure |    H     |      3hrs      |               |             |
 | Rendering Data       |    H     |      3hrs      |               |             |
 | Rendering Form       |    H     |      3hrs      |               |             |
