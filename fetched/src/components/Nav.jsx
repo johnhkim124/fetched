@@ -22,11 +22,30 @@ function Nav() {
 
   return (
     <div className="nav">
-      <Link className="fetchedNav" to="/">
+      <Link className="fetchedLogo" to="/">
         Fetched
       </Link>
 
-      <span onClick={() => setOpenNav(!openNav)}>Click for menu</span>
+      <div className="regularNav">
+        <Link to="/">Home</Link>
+
+        <Link to="/dogListing">Adopt</Link>
+
+        <Link to="/newDogForm">Find a Home</Link>
+
+        <div>
+          <div>
+            <Link>Sign Up</Link>
+          </div>
+          <div>
+            <Link>Log In</Link>
+          </div>
+        </div>
+      </div>
+
+      <span className="hamburgerNav" onClick={() => setOpenNav(!openNav)}>
+        Menu
+      </span>
       {navMenu}
     </div>
   );

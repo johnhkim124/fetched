@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.nav a {
+.linksDiv a {
   margin: 0px;
   color: black;
   display: block;
@@ -16,7 +16,7 @@
   padding: 10px;
 }
 
-.nav a:hover {
+.linksDiv a:hover {
   background-color: rgb(255, 255, 255);
 }
 
@@ -33,13 +33,34 @@
   width: 20%;
 }
 
-@media (max-width: 700px) {
+.regularNav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.fetchedLogo {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.hamburgerNav {
+  color: white;
+}
+
+@media (max-width: 900px) {
   .nav span {
     display: show;
   }
+
+  .regularNav {
+    display: none;
+  }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .nav span {
     display: none;
   }

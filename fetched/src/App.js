@@ -55,7 +55,7 @@ function App() {
       <Footer />
       <Route path="/:404">
           <h1>404 Page</h1>
-          <Link to="/">Go back home</Link>
+          <Link to="/">Menu</Link>
       </Route>
     </div>
   );
