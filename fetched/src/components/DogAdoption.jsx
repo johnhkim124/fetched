@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./DogAdoption.css";
+import "../styles/DogAdoption.css";
 import { baseURL, config } from "../services";
 import axios from "axios";
 

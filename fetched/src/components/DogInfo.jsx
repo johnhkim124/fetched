@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import { useState, useEffect } from "react";
-import "./DogInfo.css";
+import "../styles/DogInfo.css";
 import { Link } from "react-router-dom";
 
 const DogInfo = (props) => {

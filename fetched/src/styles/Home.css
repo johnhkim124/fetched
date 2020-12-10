@@ -9,7 +9,8 @@ body {
   top: 250px;
   left: 400px;
   background-color: rgb(245, 91, 91);
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: 350px;
   border-radius: 10px;
 }

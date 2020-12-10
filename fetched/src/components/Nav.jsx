@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Nav.css";
+import "../styles/Nav.css";
 import { useState } from "react";
 
 //Reference for hamburger nav

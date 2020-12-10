@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
-import "./NewDogForm.css";
+import "../styles/NewDogForm.css";
 
 const NewDogForm = (props) => {
   const [dogName, setDogName] = useState("");

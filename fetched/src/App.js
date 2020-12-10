@@ -53,10 +53,10 @@ function App() {
       </Route>
 
       <Footer />
-      <Route path="/:404">
+      {/* <Route path="/:404">
           <h1>404 Page</h1>
           <Link to="/">Menu</Link>
-      </Route>
+      </Route> */}
     </div>
   );
 }
