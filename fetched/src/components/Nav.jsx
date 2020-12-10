@@ -28,7 +28,7 @@ function Nav() {
       <header>
         <div className="logoDiv">
           <Link className="fetchedLogo" to="/">
-            Fetched
+            Fetched!
           </Link>
         </div>
 
